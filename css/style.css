@@ -356,3 +356,44 @@ footer{
     padding: 20px 0;
     opacity: .75;
 }
+
+/* ********************** | PRICE | ********************** */
+/* ********************** | PRICE | ********************** */
+
+section.container-wide.quote.pris{
+    margin-top: 60px;  
+}
+
+.container.rekruttering>p{
+    margin: 60px 0;
+}
+
+.content.flex{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.content.rekruttering>.rekh2{
+ margin: 0;
+}
+
+.rekp>span{
+    font-size: 32px;
+    color: #3758E9;
+    font-weight: 600;
+}
+.cta-container{
+    margin: 10px 0;
+}
+
+.cta-pris{
+    background-color: transparent;
+    color:#3758E9;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
