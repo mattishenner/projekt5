@@ -3,14 +3,20 @@ let options = {
     threshold: 1.0,
 };
 
-let i = 0;
+let isAnimating = false;
+
 let callback = (entries, observer) => {
     entries.forEach((entry) => {
-        i++
-        if (entry.isIntersecting) {
-            if (i % 2 == 0)
-                entry.target.classList.add("slide-in-left")
-            else entry.target.classList.add("slide-in-right")
+        if (entry.isIntersecting && !isAnimating) {
+            isAnimating = true;
+
+            /* Ternary operator - if/else shorthand */
+            let animationClass = (entry.target.dataset.animationIndex % 2 === 0)
+                ? "slide-in-left"
+                : "slide-in-right";
+
+            entry.target.classList.add(animationClass);
+            isAnimating = false;
         }
     });
 };
@@ -18,6 +24,7 @@ let callback = (entries, observer) => {
 let observer = new IntersectionObserver(callback, options);
 let target = document.querySelectorAll(".intersection");
 
-target.forEach(t => {
+target.forEach((t, index) => {
+    t.dataset.animationIndex = index;
     observer.observe(t);
-})
+});
