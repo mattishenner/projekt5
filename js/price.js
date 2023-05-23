@@ -5,7 +5,7 @@ let options = {
 
 let isAnimating = false;
 
-let callback = (entries, observer) => {
+let callback = (entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting && !isAnimating) {
             isAnimating = true;
