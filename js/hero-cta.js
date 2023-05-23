@@ -2,8 +2,10 @@ const ctaBtn = document.querySelector('.cta-btn');
 const ctaPlaceholder = document.querySelector('.cta-placeholder');
 
 function setButtonPosition() {
-  let rect = ctaPlaceholder.getBoundingClientRect();
-  ctaBtn.style.top = rect.top + "px";
+  if (!ctaBtn.classList.contains('scrolled')) {
+    let rect = ctaPlaceholder.getBoundingClientRect();
+    ctaBtn.style.top = rect.top + "px";
+  }
 }
 
 let transitionTimeout;
