@@ -1,4 +1,4 @@
-const openForm = document.getElementById('.cta-btn')
+const openForm = document.querySelector('.cta-btn')
 const popupContainer = document.querySelector(".popup-container");
 const close = document.querySelector(".close-btn");
 
