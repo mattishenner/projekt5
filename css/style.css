@@ -508,13 +508,15 @@ section.container-wide.quote.pris {
 
 .slide-in-left {
     animation: slide-in-left;
-    animation-duration: 500ms;
+    animation-duration: 750ms;
+    animation-timing-function: ease-out;
     opacity: 1;
 }
 
 .slide-in-right {
     animation: slide-in-right;
-    animation-duration: 500ms;
+    animation-duration: 750ms;
+    animation-timing-function: ease-out;
     opacity: 1;
 }
 
@@ -525,20 +527,28 @@ mark.white {
 
 @keyframes slide-in-left {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-100px);
+        opacity: 0;
+        filter: blur(2px);
     }
 
     to {
         transform: translateX(0%);
+        opacity: 1;
+        filter: blur(0px);
     }
 }
 
 @keyframes slide-in-right {
     from {
-        transform: translateX(100%);
+        transform: translateX(100px);
+        opacity: 0;
+        filter: blur(2px);
     }
 
     to {
         transform: translateX(0%);
+        opacity: 1;
+        filter: blur(0px);
     }
 }
