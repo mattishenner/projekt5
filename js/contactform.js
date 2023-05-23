@@ -1,6 +1,11 @@
-document.querySelector(".cta-placeholder").addEventListener("Click", function(){
-    document.querySelector(".popup-contactform").classList.add("active")
+const popupContainer = document.querySelector(".popup-container");
+
+window.addEventListener("click", function(){
+
+    showPopup();
+
 });
-document.querySelector(".close-btn").addEventListener("Click", function(){
-    document.querySelector(".popup-contactform").classList.remove("active")
-});
+
+function showPopup(){
+    const 
+}
