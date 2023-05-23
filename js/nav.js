@@ -21,6 +21,8 @@ logo.textContent = "KISS & Co.";
 nav.appendChild(logo);
 
 
+//opret container til nav-items
+
 //opret ul
 let ul = document.createElement("ul");
 //i hver iteration af loopet, laves et list item med et anchor tag
@@ -43,17 +45,38 @@ nav.appendChild(ul);
 
 
 //button
+let buttonLi = document.createElement("li");
 let button = document.createElement("button");
+
+buttonLi.appendChild(button);
+
 
 button.textContent = "Kontakt os";
 button.classList.add("cta-btn");
 
-nav.appendChild(button);
+ul.appendChild(buttonLi);
 
 
-//margin
-let marginDiv = document.createElement("div");
-marginDiv.classList.add("nav-marg");
-nav.appendChild(marginDiv);
+//menu icon
+let openMenuIcon = document.createElement("div");
+openMenuIcon.classList.add("open-menu-icon");
+
+let iconSpan = document.createElement("span");
+iconSpan.classList.add("icon-line");
 
 
+let iconSpan2 = document.createElement("span");
+iconSpan2.classList.add("icon-line");
+
+
+openMenuIcon.appendChild(iconSpan);
+openMenuIcon.appendChild(iconSpan2);
+
+nav.appendChild(openMenuIcon);
+
+
+openMenuIcon.addEventListener("click", () => {
+    ul.classList.toggle("open-menu");
+    iconSpan.classList.toggle("close");
+    iconSpan2.classList.toggle("close");
+})
