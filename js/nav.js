@@ -34,7 +34,7 @@ navItems.forEach((navItem) => {
     li.appendChild(a);
     ul.appendChild(li);
 
-    if (navItem.path.includes(`${currentPage}`)){
+    if (navItem.path === (`${currentPage}`)){
         a.classList.add("active");
     }
 })

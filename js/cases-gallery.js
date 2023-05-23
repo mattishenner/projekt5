@@ -18,7 +18,7 @@ function makeImageActive(index) {
 
   // Delay for the CSS change to take effect
   setTimeout(() => {
-    progressBarElements[index].style.transition = 'width 3s linear';
+    progressBarElements[index].style.transition = 'width 10s linear';
     progressBarElements[index].style.width = '90%';
   }, 20);
 }
@@ -30,12 +30,12 @@ function updateImage() {
 
   // Set up the next image change
   clearTimeout(progress);
-  progress = setTimeout(updateImage, 3000); // Change every 3 seconds
+  progress = setTimeout(updateImage, 10000); // Change every 3 seconds
 }
 
 // Initial setup
 makeImageActive(imgIndex);
-progress = setTimeout(updateImage, 3000);
+progress = setTimeout(updateImage, 10000);
 
 // Event listeners for images
 images.forEach((image, index) => {
@@ -43,6 +43,6 @@ images.forEach((image, index) => {
     clearTimeout(progress); // Clear existing timer
     imgIndex = index; // Set current image to the clicked one
     makeImageActive(imgIndex); // Make the clicked image active
-    progress = setTimeout(updateImage, 3000); // Restart the slideshow
+    progress = setTimeout(updateImage, 10000); // Restart the slideshow
   });
 });
