@@ -784,3 +784,16 @@ mark.white {
     font-size: 40px;
     cursor: pointer;
 }
+
+@media(max-width: 700px){
+    .popup-container .popup-box{
+        width: calc(100% - 30px);
+    }
+    .popup-container .popup-box .img-area{
+        display: none;
+    }
+    .popup-container .popup-box .popup-form{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
