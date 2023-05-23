@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/calendly.css">
     <script src="js/hero-cta.js" defer></script>
     <script src="js/cases-gallery.js" defer></script>
+    <script src="js/contactform.js" defer></script>
 </head>
 
 <body>
@@ -33,6 +34,20 @@
     <main>
 
     </main>
+    <!-- Kontakt form pop up -->
+    <section class="container-wide blue contact">
+        <div class="popup-contactform">
+                <div class="close-btn">&times;</div>
+            <form action="https://formsubmit.co/your@email.com" method="POST">
+                <h1>Kontakt formular</h1>
+                <input type="text" name="name" class="form-control" placeholder="Fulde Navn" required>
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                <textarea placeholder="Skriv din besked her.." class="form-control" name="message" rows="10" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
     <!-- Video section -->
     <section class="bg-video-container">
         <button class="btn-play">Play</button>
@@ -181,9 +196,6 @@
             }
         </script>
     </section>
-
-
-
 
 
     <footer class="container">
