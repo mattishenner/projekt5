@@ -549,7 +549,7 @@ footer {
     border-radius: var(--border-radius);
     position: relative;
     overflow-y: scroll;
-    max-height: 100dvh;
+    max-height: 100vh;
 }
 
 .popup-box h3{
@@ -564,6 +564,7 @@ footer {
 .popup-text li{
     list-style: none;
     margin-bottom: 1em;
+    margin-top: 20px;
 }
 
 .popup-container .popup-box .popup-text li i{
