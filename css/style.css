@@ -6,7 +6,7 @@
     --clr-primary: #3758E9;
     --clr-secondary: #ABBBFF;
     --clr-background: #F9F7F6;
-    --clr-cta: #F07048;
+    --clr-cta: #e75f35;
     --clr-text: #1E3B57;
 
     /* Margins */
@@ -381,6 +381,7 @@ blockquote {
 }
 .gallery-img .content a {
     color: var(--clr-background);
+    line-height: 2.25em;
 }
 .gallery-img.active .content {
     display: block;
@@ -506,6 +507,11 @@ input[type="submit"] {
 footer {
     padding: 20px 0;
     opacity: .75;
+}
+
+#copyright {
+    opacity: .4;
+    font-size: .875em;
 }
 
 /* ********************** | PRICE | ********************** */
