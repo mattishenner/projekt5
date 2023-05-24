@@ -22,7 +22,7 @@
     right:0;
     bottom:0;
     overflow:hidden;
-    z-index:9999;
+    z-index:1098;
     background-color:#a5a5a5;
     background-color:rgba(31,31,31,.4)
 }
@@ -83,7 +83,7 @@
     position:fixed;
     right:20px;
     bottom:15px;
-    z-index:9998
+    z-index:1097
 }
 .calendly-badge-widget .calendly-badge-content{
     display:table-cell;
