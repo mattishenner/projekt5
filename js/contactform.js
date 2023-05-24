@@ -9,3 +9,9 @@ openForm.addEventListener('click', () => {
 close.addEventListener('click', function(){
     popupContainer.classList.remove('show');
 });
+
+window.onclick = function(e){
+    if(e.target == popupContainer) {
+        popupContainer.classList.remove('show');
+    }
+};

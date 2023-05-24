@@ -728,12 +728,23 @@ mark.white {
     transform: translate(-50%, -50%);
     display: flex;
     flex-wrap: wrap;
-    padding-left: 30px;
+    padding: 50px;
+    border-radius: var(--border-radius);
 }
 
 .popup-container .popup-box .popup-text{
     flex: 0 0 50%;
     max-width: 50%;
+    color: var(--clr-background);
+}
+
+.popup-container .popup-box .popup-text li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.popup-container .popup-box .popup-text li i{
+    margin-right: 15px;
 }
 
 .popup-container .popup-box .popup-form{
@@ -761,9 +772,14 @@ mark.white {
 
 .popup-container .popup-box .popup-form .submit-btn{
     width: 100%;
-    background-color: var(--clr-cta);
+    background-color: var(--clr-text);
     margin-bottom: 15px;
     font-size: 1rem;
+}
+
+.popup-container .popup-box .popup-form .submit-btn:hover{
+    background: var(--clr-secondary);
+    color: var(--clr-primary);
 }
 
 .popup-container .popup-box .popup-form .close-btn{
@@ -772,6 +788,7 @@ mark.white {
     top: 0;
     font-size: 40px;
     cursor: pointer;
+    color: var(--clr-background);
 }
 
 @media(max-width: 1000px){
