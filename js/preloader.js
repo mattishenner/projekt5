@@ -12,18 +12,26 @@ function showPage() {
   var preloader = document.getElementById("preloader");
   var content = document.getElementById("preloader-content");
 
-  // Lad preloaderen slide op og fade ud
+  // Slide up and fade out the preloader
   preloader.style.transform = 'translateY(-100%)';
   preloader.style.opacity = '0';
 
-  // Efter preloaderen er væk, vis indhold og skjul preloader
+  // After the preloader has slid up, hide it and show the content
   setTimeout(function() {
     preloader.style.display = 'none';
     content.style.display = 'block';
-  }, 1000); // Vent 1 sekund (skal matche transition i CSS)
+  }, 1000); // Wait 1 second (should match transition in CSS)
 }
 
-setTimeout(function() {
-  animation.play();
-  setTimeout(showPage, 3500);
-}, 0);
+if (!sessionStorage.getItem('alreadyLoaded')) {
+  sessionStorage.setItem('alreadyLoaded', 'true');
+  setTimeout(function() {
+    animation.play();
+    setTimeout(showPage, 3500);
+  }, 0);
+} else {
+  var preloader = document.getElementById("preloader");
+  var content = document.getElementById("preloader-content");
+  preloader.style.display = 'none';
+  content.style.display = 'block';
+}

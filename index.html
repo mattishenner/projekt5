@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KISS & Co.</title>
+    <title>KISS & Co. - Rekruttering med ♥</title>
+    <link rel="icon" type="image/x-icon" href="/img/fav.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/calendly.css">
     <script src="js/nav.js" defer></script>
@@ -15,6 +16,8 @@
     <script src="https://kit.fontawesome.com/f9361c2581.js" crossorigin="anonymous"></script>
     <script src="js/hero-cta.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.js"></script>
+    <script src="js/video-overlay.js" defer></script>
+    <script src="js/bottom-contact.js" defer></script>
 </head>
 
 <body>
@@ -32,9 +35,6 @@
         <button class="cta-placeholder">Kontakt os</button>
     </header>
 
-    <main>
-
-    </main>
 
     <!-- Kontakt form pop up -->
     <section>
@@ -51,7 +51,7 @@
                             </li> 
                             <li>
                                 <span><i class="fa-sharp fa-solid fa-mobile-screen"></i></span>
-                                <span>12 34 56 78</span>
+                                <span>22 61 05 09</span>
                             </li>
                             <li>
                                 <span><i class="fa-sharp fa-solid fa-location-dot"></i> </span>
@@ -84,72 +84,30 @@
         <div class="content">
             <div class="text">
                 <h2>Vi gør mindre - du opnår mere</h2>
-                <p class="faded">Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual
-                    prosthetics, headed by the leading prosthetist Armen Mikayelovich Sargsyan, helps people in trouble
-                    to return to a normal, active life.</p>
+                <p class="faded">Vores koncept er simpelt: Du betaler kun for den tid, vi bruger på at finde din næste medarbejder. Ingen skjulte gebyrer, ingen uforståelige aftaler.
+                    Vi lytter, forstår dine behov, og bruger vores ekspertise til at forstå din virksomhedskultur.</p>
                 <div class="mobile-play"><span class="mobile-play-btn">▶</span> Se mere</div>
             </div>
         </div>
     </section>
 
+    <!-- Video player overlay -->
+    <div class="video-overlay">
+        <video src="/video/bg-vid.mp4" class="video-el" controls></video>
+    </div>
+
     <!-- Quote section -->
     <section class="container-wide blue quote">
         <div class="content">
-            <h3>Vi lever efter følgende motto: “Heldet følger den velforberedte og flittige”</h3>
+            <h3 class="mb-0">Rekruttering med 🧡 </h3>
+            <h3 class="subline mt-0 faded">Lokalt fokus & menneskelig forståelse</h3>
             <a href="#">Læs mere om os ➔</a>
         </div>
     </section>
 
     <!-- Cases section -->
     <section class="container cases">
-        <h2>Hør hvad vores kunder siger</h2>
-        <!-- <div class="cases-gallery">
-            <div class="card 1">
-                <div class="content">
-                    <blockquote>
-                        <i>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                            pain was born."</i>
-                    </blockquote>
-                    <cite>- Carsten, FirmaNavn</cite> <br>
-                    <a href="">Læs case ➔</a>
-                    <div class="progressbar"></div>
-                </div>
-            </div>
-            <div class="card 2 active">
-                <div class="content">
-                    <blockquote>
-                        <i>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                            pain was born."</i>
-                    </blockquote>
-                    <cite>- Carsten, FirmaNavn</cite> <br>
-                    <a href="">Læs case ➔</a>
-                    <div class="progressbar"></div>
-                </div>
-            </div>
-            <div class="card 3">
-                <div class="content">
-                    <blockquote>
-                        <i>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                            pain was born."</i>
-                    </blockquote>
-                    <cite>- Carsten, FirmaNavn</cite> <br>
-                    <a href="">Læs case ➔</a>
-                    <div class="progressbar"></div>
-                </div>
-            </div>
-            <div class="card 4">
-                <div class="content">
-                    <blockquote>
-                        <i>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                            pain was born."</i>
-                    </blockquote>
-                    <cite>- Carsten, FirmaNavn</cite> <br>
-                    <a href="">Læs case ➔</a>
-                    <div class="progressbar"></div>
-                </div>
-            </div>
-        </div> -->
-
+        <h2>Tag ikke vores ord for gode varer</h2>
         <div class="gallery">
             <div id="gallery">
               <div class="gallery-img">
@@ -157,8 +115,7 @@
                   <img src="https://picsum.photos/700" alt="Image 1">
                   <div class="content">
                       <blockquote>
-                          <i>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                              pain was born."</i>
+                          <i>"Vi søgte en kontorelev og havde haft en del udfordringer. Men KISS & Co. gjorde det let og enkelt. Henrik er virkelig passioneret, og det afspejles i kvaliteten af arbejdet."</i>
                       </blockquote>
                       <cite>- Carsten, FirmaNavn</cite> <br>
                       <a href="#">Læs case ➔</a>
@@ -211,10 +168,8 @@
 
     <!-- Kontakt -->
     <section class="container-wide blue contact">
-        <h2>Hvordan må vi kontakte dig med et tilbud?</h2>
-        <p class="faded">Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual
-            prosthetics.</p>
-
+        <h2>Lad os starte en dialog!</h2>
+        <p class="faded mb-3">Vælg din foretrukne kontaktmetode nedenfor, så vender vi tilbage til dig. </p>
         <!-- Side 1 -->
         <div id="formPage1">
             <form>
@@ -232,35 +187,30 @@
 
         <!-- Side 2 -->
         <div id="formPage2" style="display: none;">
-            <form>
-                <label>
-                    Email: <input type="email" name="email">
-                </label>
+            <form action="https://formsubmit.co/henner.mattis@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Navn" required>
+                <input type="email" name="email" placeholder="E-mail" required>
                 <input type="submit" value="Submit">
             </form>
+            <button type="button" onclick="switchBack()">Tilbage</button>
         </div>
-
+        
         <!-- Side 3 -->
         <div id="formPage3" style="display: none;">
-            <form>
-                <label>
-                    Telefonnummer: <input type="number" name="phone">
-                </label>
+            <form action="https://formsubmit.co/henner.mattis@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Navn" required>
+                <input type="number" name="phone" placeholder="Telefonnummer" required>
                 <input type="submit" value="Submit">
             </form>
+            <button type="button" onclick="switchBack()">Tilbage</button>
         </div>
 
-        <!-- JavaScript til form -->
-        <script>
-            function switchPage() {
-                document.getElementById('formPage1').style.display = 'none';
-                if (document.getElementById('option1').checked) {
-                    document.getElementById('formPage2').style.display = 'block';
-                } else if (document.getElementById('option2').checked) {
-                    document.getElementById('formPage3').style.display = 'block';
-                }
-            }
-        </script>
+        <div class="faded">
+        <p class="mb-0 mt-3 faded">Du kan selvfølgelig også altid kontakte os på:</p>
+            <p class="mb-0 faded">+45 22 61 05 09 | 
+                <a href="mailto:hej@kissco.dk" style="font-weight: 400; line-height: 1.5;">hej@kissco.dk</a>
+            </p> 
+        </div>
     </section>
 
 
@@ -273,8 +223,8 @@
             
             <div id="contact">
                 <h5>Kontakt</h5>
-                <p>+45 12 34 56 78</p>
-                <p><a href="mailto:email@hej.dk">email@hej.dk</a></p>
+                <p>+45 22 61 05 09</p>
+                <p><a href="mailto:hej@kissco.dk" style="font-weight: 400;">hej@kissco.dk</a></p>
             </div>
             
             <div id="adresse">
@@ -290,7 +240,7 @@
                 <p><a href="#">Priser</a></p>
             </div>
         </div>
-        <div id="copyright">KISS & Co. ApS © 2023 | Edisonsvej 2, 5000 Odense C, Danmark | Tlf: +45 12 34 56 78 | CVR: 12345678</div>
+        <div id="copyright">KISS & Co. ApS © 2023 | Edisonsvej 2, 5000 Odense C, Danmark | Tlf: +45 22 61 05 09 | CVR: 12345678</div>
     </footer>
 
 

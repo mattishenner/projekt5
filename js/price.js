@@ -1,6 +1,6 @@
 let options = {
     rootMargin: "0px",
-    threshold: 1.0,
+    threshold: .5,
 };
 
 let isAnimating = false;
@@ -10,7 +10,6 @@ let callback = (entries) => {
         if (entry.isIntersecting && !isAnimating) {
             isAnimating = true;
 
-            /* Ternary operator - if/else shorthand */
             let animationClass = (entry.target.dataset.animationIndex % 2 === 0)
                 ? "slide-in-left"
                 : "slide-in-right";

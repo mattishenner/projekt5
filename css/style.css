@@ -83,10 +83,17 @@ a {
 a:hover {
     opacity: .5;
 }
+.subline{
+    font-weight: 400;
+    font-size: 1.75em;
+}
 
 /* Utility classes */
 .faded {
     opacity: .7;
+}
+.mt-0{
+    margin-top: 0;
 }
 .mt-1{
     margin-top: 10px;
@@ -96,6 +103,9 @@ a:hover {
 }
 .mt-3{
     margin-top: 40px;
+}
+.mb-0{
+    margin-bottom: 0;
 }
 .mb-1{
     margin-bottom: 10px;
@@ -177,7 +187,7 @@ button:hover, .cta-btn:hover, input[type="submit"]:hover, button[type="button"]:
   }
 
 #lottie-container {
-    width: 60%;
+    width: 40%;
     height: auto;
 }
   
@@ -486,10 +496,6 @@ form {
     text-align: center;
 }
 
-.contact p {
-    margin-bottom: 40px;
-}
-
 .contact form {
     width: 50vw;
 }
@@ -502,7 +508,7 @@ form {
     box-shadow: 0px 0px 0px 1px var(--clr-background) inset;
     opacity: .75;
     border-radius: var(--border-radius);
-    margin: 12px 0px;
+    margin: 4px 0px;
     padding: 12px;
     text-align: center;
     cursor: pointer;
@@ -523,12 +529,12 @@ input[type="submit"] {
     background: var(--clr-text);
     color: var(--clr-background);
     font-size: 1em;
-    margin: 12px 0px;
+    margin: 4px 0px;
 }
 
 /* Side 2 + 3 */
-#formPage2 form label input,
-#formPage3 form label input {
+#formPage2 form input,
+#formPage3 form input {
     display: block;
     width: 100%;
     border: none;
@@ -537,6 +543,7 @@ input[type="submit"] {
     font-size: 1em;
     padding: 10px;
     border-radius: var(--border-radius);
+    margin: 4px 0px;
 }
 
 #formPage2 form label {
@@ -564,7 +571,7 @@ footer {
 /* ********************** | KONTAKT POP UP | ********************** */
 /* ********************** | KONTAKT POP UP | ********************** */
 /* Contact form pop up */
-.popup-container{
+.popup-container, .video-overlay{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -585,9 +592,16 @@ footer {
     opacity: .6;
 }
 
-.popup-container.show{
+.popup-container.show, .video-overlay.show{
     visibility: visible;
     opacity: 1;
+}
+
+.video-overlay video{
+    position: relative;
+    z-index: 1100;
+    opacity: 1;
+    max-width: 80dvw;
 }
 
 .popup-box{
@@ -596,8 +610,8 @@ footer {
     display: flex;
     align-items: center;
     gap: 30px;
-    padding: 60px 20px;
-    border-radius: var(--border-radius-box);
+    padding: 40px 20px;
+    border-radius: 14px;
     position: relative;
     overflow-y: scroll;
     max-height: 100vh;
@@ -632,13 +646,13 @@ footer {
     width: 100%;
     font-size: 1em;
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: 10px;
 }
 
 .popup-container .popup-box .popup-form textarea{
     resize: none;
     height: clamp(100px, 15vh, 200px);
-    border-radius: calc(var(--border-radius-box) / 2);
+    border-radius: 10px;
 }
 
 input, textarea{
@@ -846,6 +860,9 @@ mark.white {
         font-size: 1.5em;
         margin-bottom: .75em;
     }
+    .subline{
+        font-size: 1.125em;
+    }
 
     /* Kontakt */
     .popup-box {
@@ -958,6 +975,10 @@ mark.white {
         border-radius: 100px;
         margin: 0 5px 0 0;
         aspect-ratio: 1/1;
+    }
+    .video-overlay video{
+        max-width: unset;
+        max-height: 50dvh;
     }
 
     /* CASES SECTION */

@@ -11,6 +11,7 @@
     <script src="./js/price.js" async defer></script>
     <script src="js/nav.js" defer></script>
     <script src="js/hero-cta.js" defer></script>
+    <script src="js/bottom-contact.js" defer></script>
 </head>
 
 <body>
@@ -77,10 +78,8 @@
         </div>
 
         <section class="container-wide blue contact">
-            <h2>Hvordan må vi kontakte dig med et tilbud?</h2>
-            <p class="faded">Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual
-                prosthetics.</p>
-    
+            <h2>Lad os starte en dialog!</h2>
+            <p class="faded mb-3">Vælg din foretrukne kontaktmetode nedenfor, så vender vi tilbage til dig. </p>
             <!-- Side 1 -->
             <div id="formPage1">
                 <form>
@@ -99,34 +98,28 @@
             <!-- Side 2 -->
             <div id="formPage2" style="display: none;">
                 <form>
-                    <label>
-                        Email: <input type="email" name="email">
-                    </label>
+                    <input type="email" name="email" placeholder="E-mail">
                     <input type="submit" value="Submit">
                 </form>
+                <button type="button" onclick="switchBack()">Tilbage</button>
             </div>
-    
+            
             <!-- Side 3 -->
             <div id="formPage3" style="display: none;">
                 <form>
-                    <label>
-                        Telefonnummer: <input type="number" name="phone">
-                    </label>
+                    <input type="number" name="phone" placeholder="Telefonnummer">
                     <input type="submit" value="Submit">
                 </form>
+                <button type="button" onclick="switchBack()">Tilbage</button>
             </div>
     
-            <!-- JavaScript til form -->
-            <script>
-                function switchPage() {
-                    document.getElementById('formPage1').style.display = 'none';
-                    if (document.getElementById('option1').checked) {
-                        document.getElementById('formPage2').style.display = 'block';
-                    } else if (document.getElementById('option2').checked) {
-                        document.getElementById('formPage3').style.display = 'block';
-                    }
-                }
-            </script>
+            <div class="faded">
+            <p class="mb-0 mt-3 faded">Du kan selvfølgelig også altid kontakte os på:</p>
+                <p class="mb-0 faded">+45 22 61 05 09 | 
+                    <a href="mailto:hej@kissco.dk" style="font-weight: 400; line-height: 1.5;">hej@kissco.dk</a>
+                </p> 
+            </div>
+        </section>
 
     </main>
     <footer class="container">
