@@ -788,6 +788,72 @@ mark.white {
     }
 }
 
+/* ********************** | OM OS | ********************** */
+/* ********************** | OM OS | ********************** */
+
+.content.omos{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.content.omos h2{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.prismodel{
+    display: flex;
+    gap: 25px;
+}
+.titlebox>.container-wide.blue.omos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titlebox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+}
+.overskriftbillede{
+    width: 100%;
+}
+
+.container-wide.blue.omos{
+    min-height: 300px;
+    background-color: #3758E9;
+    padding: 20px 0;
+    color: #F9F7F6;
+    padding-left: var(--margin);
+    padding-right: var(--margin);
+}
+
+.container-wide.blue.quote.omos>h1{
+    color: #F9F7F6;
+}
+
+.valuebox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10rem;
+}
+.valuebox h4{
+    color: #F9F7F6;
+}
+.valuebox p{
+    color: #F9F7F6;
+}
+
+.container-wide.blue.value{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #3758E9;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.container-wide.blue.value>h3{
+    color: #F9F7F6;
+}
 
 /* ********************** | LARGE SCREENS | ********************** */
 /* ********************** | LARGE SCREENS | ********************** */

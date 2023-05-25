@@ -3,12 +3,11 @@ let options = {
     threshold: 1.0,
 };
 
-let isAnimating = false;
+
 
 let callback = (entries) => {
     entries.forEach((entry) => {
-        if (entry.isIntersecting && !isAnimating) {
-            isAnimating = true;
+        if (entry.isIntersecting) {
 
             /* Ternary operator - if/else shorthand */
             let animationClass = (entry.target.dataset.animationIndex % 2 === 0)
@@ -16,7 +15,6 @@ let callback = (entries) => {
                 : "slide-in-right";
 
             entry.target.classList.add(animationClass);
-            isAnimating = false;
         }
     });
 };
