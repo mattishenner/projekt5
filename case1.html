@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KISS & Co.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calendly.css">
+    <script src="js/nav.js" defer></script>
+    <script src="js/cases-gallery.js" defer></script>
+    <script src="js/contactform.js" defer></script>
+    <script src="https://kit.fontawesome.com/f9361c2581.js" crossorigin="anonymous"></script>
+    <script src="js/hero-cta.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.js"></script>
+</head>
+
+<body>
+    <nav></nav>
+
+    <section class="container-wide blue quote pris">
+        <div class="content">
+            <h1>Case study: En kontorelev var svær at finde</h1>
+        </div>
+    </section>
+
+    <main class="container">
+        <article class="blog">
+            <p class="mt-3 faded">ABC virksomhed havde et presserende behov for en dygtig kontorelev, men trods flere forsøg, havde de haft svært ved at finde den rette kandidat. Tiden gik, og opgaverne hobede sig op. De havde brug for en pålidelig løsning hurtigt.</p>
+            <h3 class="mb-1 mt-3">Vores løsning: En skræddersyet tilgang</h3>
+            <img src="https://picsum.photos/450/300" alt="billede" style="float: left; margin-right: 1em;">
+            <p>Med KISS & Co. på holdet blev rekrutteringsprocessen strømlinet og tilpasset ABC's specifikke behov. Vi startede med en dybdegående samtale for at forstå virksomhedens unikke kultur og præcise krav til den nye medarbejder.</p>
+            <p>Herefter tog KISS & Co. affære. Vi satte en effektiv proces i gang, hvor vi kombinerede vores dybdegående erfaring med vores lokale indsigt og netværk. Vi var i løbende dialog med ABC virksomhed og sørger for, at de altid var informeret om processen.</p>
+            <br>
+            <h3 class="mb-1 mt-3">Fra udfordring til enkelthed</h3>
+            <p>ABC virksomhed var overrasket over, hvor enkelt og let processen var. De havde forventet en træg og kompliceret proces, men med KISS & Co. oplevede de en rekrutteringsproces, der var både nem og transparent.</p>
+            <h3 class="mb-1 mt-3">Værdi for ABC</h3>
+            <p>Med vores hjælp fandt ABC virksomhed deres ideelle kontorelev, en kandidat, der ikke kun havde de nødvendige kompetencer, men som også passede perfekt ind i virksomhedens kultur. Virksomheden sparede værdifuld tid og ressourcer og kunne igen fokusere på deres kerneopgaver.</p>
+            <h3 class="mb-1 mt-3">Passion betaler sig</h3>
+            <p class="mb-3">Vores tilgang til rekrutteringsprocessen bekræftede endnu en gang, hvor vigtig en dedikeret og passioneret indsats er. Med KISS & Co., fik ABC virksomhed den løsning, de havde brug for, og en oplevelse, der var både positiv og værdifuld.</p>
+        </article>
+    </main>
+
+    <!-- Kontakt form pop up -->
+    <section>
+        <div class="popup-container">
+            <div class="popup-box">
+                    <div class="close-btn">&times;</div>
+                    <div class="popup-text">
+                        <h3>Jeg er altid klar på en uforpligtende samtale</h3>
+                        <pr>Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual prosthetics.</pr>
+                        <ul>
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-envelope"></i></span>
+                                <span>email@hej.dk</span>
+                            </li> 
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-mobile-screen"></i></span>
+                                <span>12 34 56 78</span>
+                            </li>
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-location-dot"></i> </span>
+                                <span>Edisonvej 2, 5000 Odense C, Danmark</span>
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="popup-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Fulde Navn" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Skriv din besked her..." class="form-control" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Kontakt -->
+    <section class="container-wide blue contact">
+        <h2>Hvordan må vi kontakte dig med et tilbud?</h2>
+        <p class="faded">Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual
+            prosthetics.</p>
+
+        <!-- Side 1 -->
+        <div id="formPage1">
+            <form>
+                <input type="radio" id="option1" name="option" value="option1">
+                <label for="option1">Jeg vil gerne have tilsendt en mail</label>
+
+
+                <input type="radio" id="option2" name="option" value="option2">
+                <label for="option2">Jeg vil gerne ringes op</label>
+
+
+                <button type="button" onclick="switchPage()">Continue</button>
+            </form>
+        </div>
+
+        <!-- Side 2 -->
+        <div id="formPage2" style="display: none;">
+            <form>
+                <label>
+                    Email: <input type="email" name="email">
+                </label>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- Side 3 -->
+        <div id="formPage3" style="display: none;">
+            <form>
+                <label>
+                    Telefonnummer: <input type="number" name="phone">
+                </label>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- JavaScript til form -->
+        <script>
+            function switchPage() {
+                document.getElementById('formPage1').style.display = 'none';
+                if (document.getElementById('option1').checked) {
+                    document.getElementById('formPage2').style.display = 'block';
+                } else if (document.getElementById('option2').checked) {
+                    document.getElementById('formPage3').style.display = 'block';
+                }
+            }
+        </script>
+    </section>
+
+
+    <footer class="container">
+        <div class="footer-grid">
+            <div id="about">
+                <h4>KISS & Co.</h4>
+                <p>Hos KISS & Co. brænder vi for HR. Vi beskæftiger os med rekruttering og vores netværk har allerede skabt forbindelser mellem arbejdspladser og nye medarbejdere på hele Fyn.</p>
+            </div>
+            
+            <div id="contact">
+                <h5>Kontakt</h5>
+                <p>+45 12 34 56 78</p>
+                <p><a href="mailto:email@hej.dk">email@hej.dk</a></p>
+            </div>
+            
+            <div id="adresse">
+                <h5>Adresse</h5>
+                <p>Edisonsvej 2 <br>
+                    5000 Odense C</p>
+            </div>
+            
+            <div id="navigation">
+                <h5>Navigation</h5>
+                <p><a href="#">Hjem</a></p>
+                <p><a href="#">Om os</a></p>
+                <p><a href="#">Priser</a></p>
+            </div>
+        </div>
+        <div id="copyright">KISS & Co. ApS © 2023 | Edisonsvej 2, 5000 Odense C, Danmark | Tlf: +45 12 34 56 78 | CVR: 12345678</div>
+    </footer>
+
+
+    <!-- Calendly badge widget begin -->
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/d/y5s-92w-t24/30min?primary_color=3758e9', text: 'Book uforpligtende møde', color: '#e75f35', textColor: '#F9F7F6', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
+
+</body>
+
+</html>

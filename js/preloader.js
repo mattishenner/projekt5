@@ -10,7 +10,7 @@ var animation = lottie.loadAnimation({
 
 function showPage() {
   var preloader = document.getElementById("preloader");
-  var content = document.getElementById("content");
+  var content = document.getElementById("preloader-content");
 
   // Lad preloaderen slide op og fade ud
   preloader.style.transform = 'translateY(-100%)';
