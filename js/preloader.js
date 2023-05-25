@@ -12,12 +12,18 @@ function showPage() {
   var preloader = document.getElementById("preloader");
   var content = document.getElementById("content");
 
-  preloader.style.display = "none";
+  // begin sliding up the preloader
+  preloader.style.transform = 'translateY(-100%)';
+  preloader.style.opacity = '0';
 
-  content.style.display = "block";
+  // after the preloader has slid up, hide it and show the content
+  setTimeout(function() {
+    preloader.style.display = 'none';
+    content.style.display = 'block';
+  }, 1000); // match this to the transition duration in the CSS
 }
 
 setTimeout(function() {
   animation.play();
-  setTimeout(showPage, 3200);
+  setTimeout(showPage, 4000);
 }, 0);
