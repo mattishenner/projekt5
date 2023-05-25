@@ -135,6 +135,28 @@ button:hover, .cta-btn:hover, input[type="submit"]:hover, button[type="button"]:
     color: var(--clr-primary);
 }
 
+/* ********************** | PRELOADER | ********************** */
+/* ********************** | PRELOADER | ********************** */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-primary);
+    z-index: 9999;
+  }
+
+#lottie-container {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+  
+#preloader-content {
+    display: none;
+}
+
 
 /* ********************** | NAVBAR | ********************** */
 /* ********************** | NAVBAR | ********************** */
@@ -950,19 +972,3 @@ mark.white {
     }
 
 }
-
-
-/* PRELOADER */
-#preloader-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--clr-text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
