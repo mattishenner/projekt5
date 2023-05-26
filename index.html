@@ -15,6 +15,7 @@
 
     <!-- JavaScript -->
     <script src="js/nav.js" defer></script>
+    <script src="js/price.js" defer></script>
     <script src="js/cases-gallery.js" defer></script>
     <script src="js/contactform.js" defer></script>
     <script src="js/preloader.js" defer></script>
@@ -91,7 +92,7 @@
         <button class="btn-play">Play</button>
         <video src="video/bg-vid.mp4" autoplay loop muted playsinline></video>
         <div class="content">
-            <div class="text">
+            <div class="text intersection">
                 <h2>Vi gør mindre - du opnår mere</h2>
                 <p class="faded">Vores koncept er simpelt: Du betaler kun for den tid, vi bruger på at finde din næste medarbejder. Ingen skjulte gebyrer, ingen uforståelige aftaler.
                     Vi lytter, forstår dine behov, og bruger vores ekspertise til at forstå din virksomhedskultur.</p>
@@ -107,7 +108,7 @@
 
     <!-- Quote section -->
     <section class="container-wide blue quote">
-        <div class="content">
+        <div class="content intersection">
             <h3 class="mb-0">Rekruttering med 🧡 </h3>
             <h3 class="subline mt-0 faded">Lokalt fokus & menneskelig forståelse</h3>
             <a href="#">Læs mere om os ➔</a>
@@ -115,13 +116,16 @@
     </section>
 
     <!-- Cases section -->
-    <section class="container cases">
-        <h2>Tag ikke vores ord for gode varer</h2>
+    <section class="container cases intersection">
+        <div>
+            <h2>Tag ikke vores ord for gode varer</h2>
+            <p class="faded">Hør hvad vores kunder synes om at samarbejde med os.</p>
+        </div>
         <div class="gallery">
             <div id="gallery">
               <div class="gallery-img">
                   <div id="progress-bar" class="progress-bar"></div>
-                  <img src="https://picsum.photos/700" alt="Image 1">
+                  <img src="https://picsum.photos/700" alt="Image 1" loading="lazy">
                   <div class="content">
                       <blockquote>
                           <i>"Vi søgte en kontorelev og havde haft en del udfordringer. Men KISS & Co. gjorde det let og enkelt. Henrik er virkelig passioneret, og det afspejles i kvaliteten af arbejdet."</i>
@@ -133,7 +137,7 @@
               </div>
               <div class="gallery-img">
                  <div id="progress-bar" class="progress-bar"></div>
-                <img src="https://picsum.photos/700?random=1" alt="Image 2">
+                <img src="https://picsum.photos/700?random=1" alt="Image 2" loading="lazy">
                 <div class="content">
                     <blockquote>
                         <i>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising
@@ -146,7 +150,7 @@
               </div>
               <div class="gallery-img">
                  <div id="progress-bar" class="progress-bar"></div>
-                <img src="https://picsum.photos/700?random=3" alt="Image 3">
+                <img src="https://picsum.photos/700?random=3" alt="Image 3" loading="lazy">
                 <div class="content">
                     <blockquote>
                         <i>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising
@@ -159,7 +163,7 @@
               </div>
               <div class="gallery-img">
                  <div id="progress-bar" class="progress-bar"></div>
-                <img src="https://picsum.photos/700?random=4" alt="Image 4">
+                <img src="https://picsum.photos/700?random=4" alt="Image 4" loading="lazy">
                 <div class="content">
                     <blockquote>
                         <i>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising
@@ -244,7 +248,7 @@
             
             <div id="navigation">
                 <h5>Navigation</h5>
-                <p><a href="#">Hjem</a></p>
+                <p><a href="index.html">Hjem</a></p>
                 <p><a href="#">Om os</a></p>
                 <p><a href="#">Priser</a></p>
             </div>

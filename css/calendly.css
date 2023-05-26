@@ -88,12 +88,11 @@
 .calendly-badge-widget .calendly-badge-content{
     display:table-cell;
     width:auto;
-    height:45px;
-    padding: 5px 30px;
+    padding: 16px 30px;
     border-radius:100px;
     text-align:center;
     vertical-align:middle;
-    font-weight:600;
+    font-weight:500;
     color:#fff;
     cursor:pointer;
     box-shadow: 0 0 15px rgba(0,0,0,.25);

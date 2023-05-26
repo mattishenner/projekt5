@@ -1,4 +1,4 @@
-window.onload = () => {
+const init = () => {
     const anchors = document.querySelectorAll('a');
     const transitionEl = document.querySelector('.transition-element');
   
@@ -19,9 +19,11 @@ window.onload = () => {
   
         console.log(transitionEl);
   
-        setInterval(() => {
+        setTimeout(() => {
           window.location.href = target;
         }, 300);
       })
     }
-  }
+}
+init();
+
