@@ -1,0 +1,19 @@
+.transition-element {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9000;
+    background-color: #3758E9;
+    transform: translateY(-100%);
+    pointer-events: none;
+    transition: 0.3s ease-out;
+    opacity: 0;
+  }
+  
+  .transition-element.is-transitioning {
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY(0);
+  }
