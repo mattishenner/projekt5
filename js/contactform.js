@@ -1,10 +1,22 @@
-const openForm = document.querySelectorAll('.cta-btn, .cta-placeholder');
+
+let openForm;
+
+if (document.querySelector('.cta-placeholder')) {
+    openForm = document.querySelectorAll('.cta-btn, .cta-placeholder');
+} else {
+    openForm = document.querySelectorAll('.cta-btn');
+}
+
 const popupContainer = document.querySelector(".popup-container");
 const close = document.querySelector(".close-btn");
 
+function openFormFunction() {
+    popupContainer.classList.add('show');
+}
+
 openForm.forEach(btn => {
     btn.addEventListener('click', () => {
-        popupContainer.classList.add('show');
+        openFormFunction();
     });
 });
 

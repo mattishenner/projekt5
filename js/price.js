@@ -1,6 +1,6 @@
 let options = {
     rootMargin: "0px",
-    threshold: .5,
+    threshold: 0.1,
 };
 
 let isAnimating = false;

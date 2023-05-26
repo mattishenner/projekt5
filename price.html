@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pris</title>
+    <title>KISS & Co. - Priser på rekruttering</title>
+    <meta name="description" content="Spar på rekrutteringsomkostningerne med KISS & Co.'s fair pr. time-model. Betal kun for den tid vi bruger på at finde dit match.">
+    <link rel="icon" type="image/x-icon" href="/img/fav.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -13,16 +15,58 @@
     <link rel="stylesheet" href="css/transition.css">
 
     <!-- JavaScript -->
-    <script src="./js/price.js" async defer></script>
+    <script src="./js/price.js" defer></script>
     <script src="js/nav.js" defer></script>
     <script src="js/hero-cta.js" defer></script>
     <script src="js/bottom-contact.js" defer></script>
     <script src="js/transition.js" defer></script>
+    <script src="js/contactform.js" defer></script>
 </head>
 
 <body>
     <!-- Transition overlay -->
     <div class="transition-element is-transitioning"></div>
+
+    <!-- Kontakt form pop up -->
+    <section>
+        <div class="popup-container">
+            <div class="popup-box">
+                    <div class="close-btn">&times;</div>
+                    <div class="popup-text">
+                        <h3>Jeg er altid klar på en uforpligtende samtale</h3>
+                        <pr>Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual prosthetics.</pr>
+                        <ul>
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-envelope"></i></span>
+                                <span>email@hej.dk</span>
+                            </li> 
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-mobile-screen"></i></span>
+                                <span>22 61 05 09</span>
+                            </li>
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-location-dot"></i> </span>
+                                <span>Edisonvej 2, 5000 Odense C, Danmark</span>
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="popup-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Fulde Navn" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Skriv din besked her..." class="form-control" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </section>
 
     <nav></nav>
     <main>
@@ -45,8 +89,10 @@
                             <p class="faded" style="font-size: 14px;">Hvis I ikke ansætter en af kandidaterne, sænkes
                                 prisen til 750,- / time.</p>
                             <div class="cta-container">
-                                <button class="cta-book">Book et møde</button>
-                                <button class="ghost">Beregn din pris</button>
+                                <button class="cta-book" onclick="Calendly.initPopupWidget({url:'https://calendly.com/d/y5s-92w-t24/30min'});return false;">
+                                    Book et møde
+                                </button>
+                                <button class="ghost" onclick="openFormFunction()">Kontakt os</button>
                             </div>
 
                         </div>
@@ -55,7 +101,7 @@
 
                 <div class="section-content intersection">
                     <h3 class="rekh3">Hvorfor er vores prismodel bedre?</h3>
-                    <img src="https://placekitten.com/400/300" alt="Billede af Henrik fra KISS & Co." class="float-right">
+                    <img src="img/henrik1.jpg" alt="Billede af Henrik fra KISS & Co." class="float-right half-picture">
                     <div>
                         <p>Vores unikke prismodel er baseret på tillid og fairness. Her er nogle nøglefordele, der gør
                             vores prismodel bedre:</p>
@@ -164,6 +210,12 @@
         <div id="copyright">KISS & Co. ApS © 2023 | Edisonsvej 2, 5000 Odense C, Danmark | Tlf: +45 22 61 05 09 | CVR:
             12345678</div>
     </footer>
+
+        <!-- Calendly badge widget begin -->
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/d/y5s-92w-t24/30min?primary_color=3758e9', text: 'Book uforpligtende møde', color: '#e75f35', textColor: '#F9F7F6', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
+
 </body>
 
 </html>

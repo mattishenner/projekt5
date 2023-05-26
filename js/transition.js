@@ -1,5 +1,5 @@
 const init = () => {
-    const anchors = document.querySelectorAll('a');
+    const anchors = document.querySelectorAll('a:not(.no-transition)');
     const transitionEl = document.querySelector('.transition-element');
   
     setTimeout(() => {
@@ -13,17 +13,13 @@ const init = () => {
         e.preventDefault();
         let target = e.target.href;
   
-        console.log(transitionEl);
-  
         transitionEl.classList.add('is-transitioning');
-  
-        console.log(transitionEl);
   
         setTimeout(() => {
           window.location.href = target;
         }, 300);
       })
     }
-}
-init();
-
+  }
+  init();
+  

@@ -30,10 +30,14 @@ body {
     font-size: 17px;
     color: var(--clr-text);
 }
-
 body {
     background-color: var(--clr-background);
 }
+img{
+    block-size: auto;
+}
+
+
 
 /* Typography */
 h1 {
@@ -90,6 +94,20 @@ a:hover {
     font-weight: 400;
     font-size: 1.75em;
 }
+mark {
+    background-color: transparent;
+    color: var(--clr-text);
+    background-image: url(../img/mark.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+.subtext{
+    font-size: 1.25em;
+    opacity: .7;
+}
 
 /* Utility classes */
 .faded {
@@ -119,17 +137,8 @@ a:hover {
 .mb-3{
     margin-bottom: 40px;
 }
-
-
-mark {
-    background-color: transparent;
-    color: var(--clr-text);
-    background-image: url(../img/mark.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding-bottom: 25px;
-    padding-top: 15px;
+.half-picture{
+    max-inline-size: 50%;
 }
 
 /* ********************** | CONTAINERS | ********************** */
@@ -170,6 +179,10 @@ input[type="submit"] {
 button:hover, .cta-btn:hover, input[type="submit"]:hover, button[type="button"]:hover {
     background: var(--clr-secondary);
     color: var(--clr-primary);
+}
+.cta-book a {
+    font-weight: 400;
+    color: var(--clr-background);
 }
 
 /* ********************** | PRELOADER | ********************** */
@@ -728,7 +741,7 @@ section.container-wide.quote.pris {
 }
 
 .intersection {
-    transition: opacity 250ms ease;
+    transition: opacity 1s ease;
     opacity: 0;
 }
 
@@ -762,7 +775,7 @@ mark.white {
 
 @keyframes slide-in-left {
     from {
-        transform: translateX(-100px);
+        transform: translateX(-70px);
         opacity: 0;
         filter: blur(2px);
     }
@@ -776,7 +789,7 @@ mark.white {
 
 @keyframes slide-in-right {
     from {
-        transform: translateX(100px);
+        transform: translateX(70px);
         opacity: 0;
         filter: blur(2px);
     }
@@ -883,6 +896,10 @@ mark.white {
     #lottie-container {
         width: 100%;
         height: auto;
+    }
+
+    .half-picture{
+        max-inline-size: 100%;
     }
 
     /* NAV */
