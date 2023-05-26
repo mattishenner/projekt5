@@ -5,15 +5,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pris</title>
+    <title>KISS & Co. - Priser på rekruttering</title>
+    <meta name="description" content="Spar på rekrutteringsomkostningerne med KISS & Co.'s fair pr. time-model. Betal kun for den tid vi bruger på at finde dit match.">
+    <link rel="icon" type="image/x-icon" href="/img/fav.png">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/calendly.css">
-    <script src="./js/price.js" async defer></script>
+    <link rel="stylesheet" href="css/transition.css">
+
+    <!-- JavaScript -->
+    <script src="./js/price.js" defer></script>
     <script src="js/nav.js" defer></script>
     <script src="js/hero-cta.js" defer></script>
+    <script src="js/bottom-contact.js" defer></script>
+    <script src="js/transition.js" defer></script>
+    <script src="js/contactform.js" defer></script>
 </head>
 
 <body>
+    <!-- Transition overlay -->
+    <div class="transition-element is-transitioning"></div>
+
+    <!-- Kontakt form pop up -->
+    <section>
+        <div class="popup-container">
+            <div class="popup-box">
+                    <div class="close-btn">&times;</div>
+                    <div class="popup-text">
+                        <h3>Jeg er altid klar på en uforpligtende samtale</h3>
+                        <pr>Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual prosthetics.</pr>
+                        <ul>
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-envelope"></i></span>
+                                <span>email@hej.dk</span>
+                            </li> 
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-mobile-screen"></i></span>
+                                <span>22 61 05 09</span>
+                            </li>
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-location-dot"></i> </span>
+                                <span>Edisonvej 2, 5000 Odense C, Danmark</span>
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="popup-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Fulde Navn" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Skriv din besked her..." class="form-control" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </section>
+
     <nav></nav>
     <main>
         <section class="container-wide blue quote pris">
@@ -24,20 +78,21 @@
         <div class="wrapper">
             <section class="container rekruttering">
                 <div class="section-content intersection slide-in">
-                    <p>Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual prosthetics,
-                        headed
-                        by the leading prosthetist Armen Mikayelovich Sargsyan, helps people in trouble to return to a
-                        normal,
-                        active life.</p>
+                    <p>Vi tror på fuld transparens og retfærdighed i vores prismodel, hvor du kun betaler for den tid,
+                        vi rent faktisk bruger på at finde dine perfekte kandidater. Vi har ingen skjulte gebyrer eller
+                        ekstra omkostninger. Vi har kun én pris, som er den samme for alle vores kunder.</p>
                     <div class="content flex">
-                        <img src="https://placekitten.com/200/200" alt="kat">
+                        <img src="img/pris-illu.svg" alt="rekruttering illustration">
                         <div class="content rekruttering">
                             <h2 class="rekh2">Rekruttering</h2>
                             <p class="rekp"><span>1000 kr.</span>/time</p>
-                            <p>Hvis I ikke ansætter en af kandidaterne, sænkes prisen til 750,- / time.</p>
+                            <p class="faded" style="font-size: 14px;">Hvis I ikke ansætter en af kandidaterne, sænkes
+                                prisen til 750,- / time.</p>
                             <div class="cta-container">
-                                <button class="cta-book">Book et møde</button>
-                                <button class="ghost">Beregn din pris</button>
+                                <button class="cta-book" onclick="Calendly.initPopupWidget({url:'https://calendly.com/d/y5s-92w-t24/30min'});return false;">
+                                    Book et møde
+                                </button>
+                                <button class="ghost" onclick="openFormFunction()">Kontakt os</button>
                             </div>
 
                         </div>
@@ -46,119 +101,121 @@
 
                 <div class="section-content intersection">
                     <h3 class="rekh3">Hvorfor er vores prismodel bedre?</h3>
-                    <div class="content flex">
-                        <img src="https://placekitten.com/200/200" alt="">
-                        <div>
-                            <p>Fx noget om hvor mange timer man bør forvente at sætte af til en rekruttering. individual
-                                prosthetics, headed by the leading prosthetist.</p>
-                            <ul>
-                                <li>Liste</li>
-                                <li>Liste</li>
-                                <li>Liste</li>
-                                <li>Liste</li>
-                            </ul>
-                        </div>
+                    <img src="img/henrik1.jpg" alt="Billede af Henrik fra KISS & Co." class="float-right half-picture">
+                    <div>
+                        <p>Vores unikke prismodel er baseret på tillid og fairness. Her er nogle nøglefordele, der gør
+                            vores prismodel bedre:</p>
+                        <ul>
+                            <li><strong>Betal pr. time:</strong> Ligesom du ville gøre med en håndværker, betaler du kun
+                                for de timer, vi reelt arbejder.</li>
+                            <li><strong>Fast pris:</strong> Vores timepris er 1000 kr., men hvis du (mod forventning)
+                                ender med ikke at ansætte en af vores kandidater, reduceres dette til 750 kr.</li>
+                            <li><strong>Fastlagt maximum:</strong> For fuld omkostningskontrol aftales et maximalt antal
+                                timer på forhånd. Hvis vi finder de rigtige kandidater hurtigere, er vi ærlige om det,
+                                og du betaler mindre.</li>
+                            <li><strong>Tillid:</strong> Du kan have tillid til at vi gør grundarbejdet for at sætte os
+                                ind i din virksomhed, og at de kandidater vi præsenterer derfor er det bedste match.
+                            </li>
+                            <li><strong>Omfattende service:</strong> Prisen inkluderer, naturligvis, løbende
+                                kommunikation og så mange møder som nødvendigt for at forstå din virksomheds kultur og
+                                behov fuldt ud.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="section-content intersection">
-                    <h3>Mere info om vores prismodel</h3>
+                    <h3>Vi ved, at rekruttering kan være en udfordring, men...</h3>
                     <div>
-                        <p>Fx noget om hvor mange timer man bør forvente at sætte af til en rekruttering. individual
-                            prosthetics, headed by the leading prosthetist.</p>
-                        <ul>
-                            <li>Liste</li>
-                            <li>Liste</li>
-                            <li>Liste</li>
-                            <li>Liste</li>
-                        </ul>
+                        <p>Hos KISS & Co. ønsker vi at gøre processen så enkel og stressfri som muligt for dig. Vores
+                            prismodel er designet til at give dig tryghed og tillid, idet du ved, at du kun betaler for
+                            vores faktiske arbejdstid. Prøv vores unikke tilgang til rekruttering, og oplev, hvordan vi
+                            kan skabe værdi for din virksomhed. Vær tryg ved at vi gør vores ypperste for at finde det
+                            perfekte match til din virksomhed.</p>
                     </div>
                 </div>
             </section>
         </div>
 
         <section class="container-wide blue contact">
-            <h2>Hvordan må vi kontakte dig med et tilbud?</h2>
-            <p class="faded">Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual
-                prosthetics.</p>
-    
+            <h2>Lad os starte en dialog!</h2>
+            <p class="faded mb-3">Vælg din foretrukne kontaktmetode nedenfor, så vender vi tilbage til dig. </p>
             <!-- Side 1 -->
             <div id="formPage1">
                 <form>
                     <input type="radio" id="option1" name="option" value="option1">
                     <label for="option1">Jeg vil gerne have tilsendt en mail</label>
-    
-    
+
+
                     <input type="radio" id="option2" name="option" value="option2">
                     <label for="option2">Jeg vil gerne ringes op</label>
-    
-    
+
+
                     <button type="button" onclick="switchPage()">Continue</button>
                 </form>
             </div>
-    
+
             <!-- Side 2 -->
             <div id="formPage2" style="display: none;">
                 <form>
-                    <label>
-                        Email: <input type="email" name="email">
-                    </label>
+                    <input type="email" name="email" placeholder="E-mail">
                     <input type="submit" value="Submit">
                 </form>
+                <button type="button" onclick="switchBack()">Tilbage</button>
             </div>
-    
+
             <!-- Side 3 -->
             <div id="formPage3" style="display: none;">
                 <form>
-                    <label>
-                        Telefonnummer: <input type="number" name="phone">
-                    </label>
+                    <input type="number" name="phone" placeholder="Telefonnummer">
                     <input type="submit" value="Submit">
                 </form>
+                <button type="button" onclick="switchBack()">Tilbage</button>
             </div>
-    
-            <!-- JavaScript til form -->
-            <script>
-                function switchPage() {
-                    document.getElementById('formPage1').style.display = 'none';
-                    if (document.getElementById('option1').checked) {
-                        document.getElementById('formPage2').style.display = 'block';
-                    } else if (document.getElementById('option2').checked) {
-                        document.getElementById('formPage3').style.display = 'block';
-                    }
-                }
-            </script>
+
+            <div class="faded">
+                <p class="mb-0 mt-3 faded">Du kan selvfølgelig også altid kontakte os på:</p>
+                <p class="mb-0 faded">+45 22 61 05 09 |
+                    <a href="mailto:hej@kissco.dk" style="font-weight: 400; line-height: 1.5;">hej@kissco.dk</a>
+                </p>
+            </div>
+        </section>
 
     </main>
     <footer class="container">
         <div class="footer-grid">
             <div id="about">
-                <h4>KISS & Co.</h4>
+                <h4 class="mb-1">KISS & Co.</h4>
                 <p>Hos KISS & Co. brænder vi for HR. Vi beskæftiger os med rekruttering og vores netværk har allerede
                     skabt forbindelser mellem arbejdspladser og nye medarbejdere på hele Fyn.</p>
             </div>
 
             <div id="contact">
-                <h5>Kontakt</h5>
-                <p><b>+45 12 34 56 78</b></p>
-                <p><a href="mailto:email@hej.dk">email@hej.dk</a></p>
+                <h5 class="mb-1">Kontakt</h5>
+                <p class="mb-0">+45 22 61 05 09</p>
+                <p><a href="mailto:hej@kissco.dk" style="font-weight: 400;">hej@kissco.dk</a></p>
             </div>
 
             <div id="adresse">
-                <h5>Adresse</h5>
-                <p>Edisonsvej 2</p>
-                <p>5000 Odense C</p>
+                <h5 class="mb-1">Adresse</h5>
+                <p class="mb-0">Edisonsvej 2</p>
+                <p class="mb-0">5000 Odense C</p>
             </div>
 
             <div id="navigation">
-                <h5>Navigation</h5>
-                <p><a href="#">Hjem</a></p>
-                <p><a href="#">Om os</a></p>
-                <p><a href="#">Priser</a></p>
+                <h5 class="mb-1">Navigation</h5>
+                <p class="mb-0"><a href="index.html">Hjem</a></p>
+                <p class="mb-0"><a href="#">Om os</a></p>
+                <p class="mb-0"><a href="#">Priser</a></p>
             </div>
         </div>
-        <div id="copyright">KISS & Co. ApS © 2023 | Edisonsvej 2, 5000 Odense C, Danmark | Tlf: +45 12 34 56 78 | CVR:
+        <div id="copyright">KISS & Co. ApS © 2023 | Edisonsvej 2, 5000 Odense C, Danmark | Tlf: +45 22 61 05 09 | CVR:
             12345678</div>
     </footer>
+
+        <!-- Calendly badge widget begin -->
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/d/y5s-92w-t24/30min?primary_color=3758e9', text: 'Book uforpligtende møde', color: '#e75f35', textColor: '#F9F7F6', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
+
 </body>
 
 </html>
