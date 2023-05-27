@@ -9,6 +9,12 @@
     <meta name="description" content="Din enkle, effektive rekrutteringspartner på Fyn. Nærhed, forståelse, trivsel - det er vores tilgang til rekruttering HR.">
     <link rel="icon" type="image/x-icon" href="/img/fav.png">
 
+    <!-- Preload lottie animation -->
+    <link rel="preload" href="js/preloader.json" as="fetch">
+    <!-- Preload lottie player -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.js" as="script">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/calendly.css">
@@ -19,10 +25,8 @@
     <script src="js/price.js" defer></script>
     <script src="js/cases-gallery.js" defer></script>
     <script src="js/contactform.js" defer></script>
-    <script src="js/preloader.js" defer></script>
     <script src="https://kit.fontawesome.com/f9361c2581.js" crossorigin="anonymous"></script>
     <script src="js/hero-cta.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.js"></script>
     <script src="js/video-overlay.js" defer></script>
     <script src="js/bottom-contact.js" defer></script>
     <script src="js/transition.js" defer></script>
@@ -37,7 +41,9 @@
         <div id="lottie-container"></div>
         <div id="preloader-content" style="display: none;">
         </div>
-      </div>
+    </div>
+    <!-- Preload JS (pleaseee don't defer :') ) -->
+    <script src="js/preloader.js"></script>
 
     <nav></nav>
 
@@ -92,7 +98,7 @@
 
     <!-- Video section -->
     <section class="bg-video-container">
-        <video src="video/bg-vid.mp4" autoplay loop muted playsinline></video>
+        <video preload="none" src="video/bg-vid.mp4"  autoplay loop muted playsinline></video>
         <button class="btn-play">Play</button>
         <div class="container">
             <div class="content">

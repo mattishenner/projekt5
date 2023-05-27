@@ -4,7 +4,7 @@ var animation = lottie.loadAnimation({
   container: container,
   renderer: "svg",
   loop: false,
-  autoplay: false,
+  autoplay: true,
   path: "js/preloader.json"
 });
 
