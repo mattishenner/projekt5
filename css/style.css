@@ -147,11 +147,20 @@ mark {
     margin-left: var(--margin);
     margin-right: var(--margin);
 }
-
 .container-wide {
     padding-left: var(--margin);
     padding-right: var(--margin);
 }
+
+@media only screen and (min-width: 2000px) {
+    .container {
+        width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 
 section.blue {
     background-color: var(--clr-primary);
@@ -328,7 +337,6 @@ video {
 }
 
 .bg-video-container .content {
-    padding: 0 var(--margin);
     position: relative;
     z-index: 1;
     display: flex;
@@ -709,7 +717,7 @@ section.container-wide.quote.pris {
 }
 
 .wrapper, .blog {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     hyphens: auto;
 }
@@ -803,12 +811,6 @@ mark.white {
 
 /* ********************** | OM OS | ********************** */
 /* ********************** | OM OS | ********************** */
-
-.content.omos{
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 100px;
-}
 .content.omos h2{
     margin-top: 100px;
     margin-bottom: 20px;
@@ -835,7 +837,7 @@ mark.white {
 }
 
 
-.container-wide.blue.omos{
+.blue.omos{
     min-height: 300px;
     background-color: #3758E9;
     padding: 20px 0;
@@ -844,30 +846,32 @@ mark.white {
     padding-right: var(--margin);
 }
 
-.container-wide.blue.quote.omos>h1{
+.blue.quote.omos>h1{
     color: #F9F7F6;
 }
 
 .valuebox{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 10rem;
+    gap: 20px;
 }
 .valuebox h4{
     color: #F9F7F6;
+    font-weight: 400;
+    font-size: 1.75em;
 }
 .valuebox p{
     color: #F9F7F6;
 }
 
-.container-wide.blue.value{
+.blue.value{
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #3758E9;
     padding-top: 10px;
     box-sizing: border-box;
 }
-.container-wide.blue.value>h3{
+.value .container h3{
     color: #F9F7F6;
 }
 
