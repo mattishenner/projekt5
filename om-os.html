@@ -6,52 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om Os</title>
+
+    <!-- !!!OBS MANGLER DESCRIPTION! -->
+    <meta name="description" content="">
+    <link rel="icon" type="image/x-icon" href="/img/fav.png">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/calendly.css">
-    <script src="./js/price.js" async defer></script>
+    <link rel="stylesheet" href="css/transition.css">
+
+    <!-- JavaScript -->
+    <script src="./js/price.js" defer></script>
     <script src="js/nav.js" defer></script>
     <script src="js/hero-cta.js" defer></script>
+    <script src="js/bottom-contact.js" defer></script>
+    <script src="js/transition.js" defer></script>
+    <script src="js/contactform.js" defer></script>
 </head>
 
 <body>
+    <!-- Transition overlay -->
+    <div class="transition-element is-transitioning"></div>
+
     <nav></nav>
     <main>
-        <section>
-            <div class="titlebox">
-                <div class="container-wide blue omos">
-                    <h1>En overskrift til om os som er cirka lige så lang her</h1>
-                </div>
-                <img class="overskriftbillede" src="https://placekitten.com/900/400" alt="henrikpotraet">
-            </div>
+        <section class="titlebox">
+            <div class="container-wide blue omos"> <h2>En overskrift til om os som er cirka lige så lang her</h2> </div>
+            <img class="overskriftbillede" src="https://placekitten.com/900/400" alt="henrikpotraet">
         </section>
 
         <section>
-            <div class="container blog">
-                <div class="intersection">
-                    <h2>Hvorfor er vores prismodel bedre?</h2>
-                    <p>Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual prosthetics,
-                        headed by the leading prosthetist Armen Mikayelovich Sargsyan, helps people in trouble to return
-                        to
-                        a normal, active life.</p>
-                </div>
-                <div class="intersection">
-                    <h2>Hvorfor er vores prismodel bedre?</h2>
-                    <img src="https://placekitten.com/300/200" alt="infografik" class="float-left">
-                    <div>
-                        <p>Fx noget om hvor mange timer man bør forvente at sætte af til en rekruttering. individual
-                            prosthetics, headed by the leading prosthetist.</p>
-                        <ul>
-                            <li>Liste</li>
-                            <li>Pointe her</li>
-                            <li>Pointe her</li>
-                            <li>Pointe her</li>
-                        </ul>
+            <div class="container">
+                <div class="blog">
+                    <div class="intersection">
+                        <h3>Hvorfor er vores prismodel bedre?</h3>
+                        <p>Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual prosthetics,
+                            headed by the leading prosthetist Armen Mikayelovich Sargsyan, helps people in trouble to return
+                            to
+                            a normal, active life.</p>
                     </div>
-                </div>
-                <div class="intersection">
-                    <h2>Mere info om vores prismodel</h2>
-                    <p class="mb-3">Fx noget om hvor mange timer man bør forvente at sætte af til en rekruttering. individual
-                        prosthetics, headed by the leading prosthetist.</p>
+                    <div class="intersection">
+                        <h3>Hvorfor er vores prismodel bedre?</h3>
+                        <img src="https://placekitten.com/300/200" alt="infografik" class="float-left">
+                        <div>
+                            <p>Fx noget om hvor mange timer man bør forvente at sætte af til en rekruttering. individual
+                                prosthetics, headed by the leading prosthetist.</p>
+                            <ul>
+                                <li>Liste</li>
+                                <li>Pointe her</li>
+                                <li>Pointe her</li>
+                                <li>Pointe her</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="intersection">
+                        <h3>Mere info om vores prismodel</h3>
+                        <p class="mb-3">Fx noget om hvor mange timer man bør forvente at sætte af til en rekruttering. individual
+                            prosthetics, headed by the leading prosthetist.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -62,15 +75,15 @@
                     <h3>Vores kerneværdier</h3>
                     <div class="valuebox">
                         <div>
-                            <h4 class="mb-0 mt-0">Kvalitet</h4>
+                            <h4 class="mb-0 mt-2">Kvalitet</h4>
                             <p class="faded">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
                         </div>
                         <div>
-                            <h4 class="mb-0 mt-0">Tillid</h4>
+                            <h4 class="mb-0 mt-2">Tillid</h4>
                             <p class="faded">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
                         </div>
                         <div>
-                            <h4 class="mb-0 mt-0">Ærlighed</h4>
+                            <h4 class="mb-0 mt-2">Ærlighed</h4>
                             <p class="faded">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed</p>
                         </div>
                     </div>

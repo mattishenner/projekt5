@@ -54,7 +54,7 @@ h2 {
 h3 {
     font-weight: 500;
     font-size: 2.25em;
-    margin-bottom: .75em;
+    margin-bottom: 10px;
 }
 h4 {
     font-weight: 600;
@@ -811,9 +811,8 @@ mark.white {
 
 /* ********************** | OM OS | ********************** */
 /* ********************** | OM OS | ********************** */
-.content.omos h2{
-    margin-top: 100px;
-    margin-bottom: 20px;
+.titlebox h2{
+    margin: unset;
 }
 
 .prismodel{
@@ -844,10 +843,6 @@ mark.white {
     color: #F9F7F6;
     padding-left: var(--margin);
     padding-right: var(--margin);
-}
-
-.blue.quote.omos>h1{
-    color: #F9F7F6;
 }
 
 .valuebox{
@@ -930,7 +925,7 @@ mark.white {
     h3 {
         font-weight: 500;
         font-size: 1.5em;
-        margin-bottom: .75em;
+        margin-bottom: 10px;
     }
     .subline{
         font-size: 1.125em;
@@ -954,6 +949,11 @@ mark.white {
         font-size: 2.5em;
         color: var(--clr-secondary);
         cursor: pointer;
+    }
+
+    /* Om os underside */
+    .valuebox h4{
+        font-size: 1.25em;
     }
 
 }
@@ -1126,6 +1126,21 @@ mark.white {
     }
     .rekh2{
         margin-top: 0;
+    }
+
+    /* Om os underside */
+    .titlebox{
+        grid-template-columns: 1fr;
+    }
+    .blue.omos{
+        min-height: unset;
+    }
+    .valuebox h4{
+        font-size: 1em;
+    }
+    .valuebox {
+        grid-template-columns: 1fr;
+        gap: 0px;
     }
 
 }
