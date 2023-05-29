@@ -28,7 +28,7 @@ function updateImage() {
   makeImageActive(imgIndex);
 
   clearTimeout(progress);
-  progress = setTimeout(updateImage, transitionDuration*1000); // Change every 3 seconds
+  progress = setTimeout(updateImage, transitionDuration*1000); 
 }
 
 

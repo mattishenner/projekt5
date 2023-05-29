@@ -2,7 +2,6 @@ const nav = document.querySelector("nav");
 
 //active link styling
 const currentPage = window.location.pathname;
-console.log(currentPage)
 
 //array til nav items
 let navItems = [
