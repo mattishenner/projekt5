@@ -836,6 +836,9 @@ mark.white {
     object-fit: cover;
 }
 
+.value{
+    margin-top: 60px;
+}
 
 .blue.omos{
     min-height: 300px;
@@ -850,11 +853,13 @@ mark.white {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+    padding: 20px 0;
 }
 .valuebox h4{
     color: #F9F7F6;
     font-weight: 400;
-    font-size: 1.75em;
+    font-size: 1.5em;
+    margin-bottom: .5em;
 }
 .valuebox p{
     color: #F9F7F6;
