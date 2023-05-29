@@ -29,13 +29,58 @@
     <!-- Transition overlay -->
     <div class="transition-element is-transitioning"></div>
 
+    <!-- Kontakt form pop up -->
+    <section>
+        <div class="popup-container">
+            <div class="popup-box">
+                    <div class="close-btn">&times;</div>
+                    <div class="popup-text">
+                        <h3>Har du spørgsmål, eller vil du bare sige hej?</h3>
+                        <p class="faded">Uanset hvad ser vi frem til at høre fra dig!</p>
+                        <ul>
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-envelope"></i></span>
+                                <a href="mailto:hej@kissco.dk" class="contact-mail">hej@kissco.dk</a>
+                            </li> 
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-mobile-screen"></i></span>
+                                <span>22 61 05 09</span>
+                            </li>
+                            <li>
+                                <span><i class="fa-sharp fa-solid fa-location-dot"></i> </span>
+                                <a href="https://www.google.com/maps/place/Edisonsvej+2,+5000+Odense/@55.40532,10.3861615,17z/data=!3m1!4b1!4m6!3m5!1s0x464cdffe2871dd35:0xc9e86be16bf7b023!8m2!3d55.40532!4d10.3887364!16s%2Fg%2F11bw3wzmfl?entry=ttu" class="contact-mail">
+                                    Edisonvej 2, 5000 Odense C
+                                </a>
+                            </li> 
+                        </ul>
+                    </div>
+                    <div class="popup-form">
+                        <form action="https://formsubmit.co/henner.mattis@gmail.com" method="POST">
+                            <div class="form-group">
+                                <input type="text" placeholder="Fulde Navn" class="form-control" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" class="form-control" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Skriv din besked her..." class="form-control" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </section>
+
     <nav></nav>
     <main>
+        <!-- Tittel og billede i toppen -->
         <section class="titlebox">
             <div class="container-wide blue omos"> <h2>Ærlig, direkte, empatisk - sådan beskriver vi os selv</h2> </div>
             <img class="overskriftbillede" src="img/henrik2.jpg" alt="Portræt af Henrik">
         </section>
 
+        <!-- Tekst afsnit -->
         <section>
             <div class="container">
                 <div class="blog">
@@ -66,6 +111,7 @@
             </div>
         </section>
 
+        <!-- Vores værdier afsnit -->
         <section >
             <div class="blue value">
                 <div class="container">
@@ -88,6 +134,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="container">
         <div class="footer-grid">
             <div id="about">
@@ -116,6 +163,11 @@
         </div>
         <div id="copyright">KISS & Co. ApS © 2023 | Edisonsvej 2, 5000 Odense C, Danmark | Tlf: +45 22 61 05 09 | CVR: 12345678</div>
     </footer>
+
+    <!-- Calendly badge widget begin -->
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/d/y5s-92w-t24/30min?primary_color=3758e9', text: 'Book uforpligtende møde', color: '#e75f35', textColor: '#F9F7F6', branding: undefined }); }</script>
+<!-- Calendly badge widget end -->
 </body>
 
 </html>

@@ -69,10 +69,10 @@ h5 {
 }
 p {
     margin: 3px 0 8px;
-    line-height: 1.75em;
+    line-height: 1.5em;
 }
 ul {
-    line-height: 1.75em;
+    line-height: 1.5em;
     list-style: square;
     padding-left: 1em;
     margin-top: 0;
@@ -636,6 +636,11 @@ footer {
 
 .popup-container .popup-box .popup-form{
     flex: 50%;
+}
+
+.contact-mail{
+    color: var(--clr-background);
+    font-weight: 400;
 }
 
 .form-control{

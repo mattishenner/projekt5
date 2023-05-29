@@ -33,12 +33,12 @@
             <div class="popup-box">
                     <div class="close-btn">&times;</div>
                     <div class="popup-text">
-                        <h3>Jeg er altid klar på en uforpligtende samtale</h3>
-                        <pr>Prosthetic and orthopedic enterprise SPTM Orto M is a modern workshop of individual prosthetics.</pr>
+                        <h3>Har du spørgsmål, eller vil du bare sige hej?</h3>
+                        <p class="faded">Uanset hvad ser vi frem til at høre fra dig!</p>
                         <ul>
                             <li>
                                 <span><i class="fa-sharp fa-solid fa-envelope"></i></span>
-                                <span>email@hej.dk</span>
+                                <a href="mailto:hej@kissco.dk" class="contact-mail">hej@kissco.dk</a>
                             </li> 
                             <li>
                                 <span><i class="fa-sharp fa-solid fa-mobile-screen"></i></span>
@@ -46,17 +46,19 @@
                             </li>
                             <li>
                                 <span><i class="fa-sharp fa-solid fa-location-dot"></i> </span>
-                                <span>Edisonvej 2, 5000 Odense C, Danmark</span>
+                                <a href="https://www.google.com/maps/place/Edisonsvej+2,+5000+Odense/@55.40532,10.3861615,17z/data=!3m1!4b1!4m6!3m5!1s0x464cdffe2871dd35:0xc9e86be16bf7b023!8m2!3d55.40532!4d10.3887364!16s%2Fg%2F11bw3wzmfl?entry=ttu" class="contact-mail">
+                                    Edisonvej 2, 5000 Odense C
+                                </a>
                             </li> 
                         </ul>
                     </div>
                     <div class="popup-form">
-                        <form>
+                        <form action="https://formsubmit.co/henner.mattis@gmail.com" method="POST">
                             <div class="form-group">
-                                <input type="text" placeholder="Fulde Navn" class="form-control" required>
+                                <input type="text" placeholder="Fulde Navn" class="form-control" name="name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="Email" class="form-control" required>
+                                <input type="email" placeholder="Email" class="form-control" name="email" required>
                             </div>
                             <div class="form-group">
                                 <textarea name="message" placeholder="Skriv din besked her..." class="form-control" name="message" required></textarea>
@@ -69,6 +71,8 @@
     </section>
 
     <nav></nav>
+
+    <!-- Tekstafsnit -->
     <main>
         <section class="container-wide blue quote pris">
             <div class="content">
@@ -180,6 +184,8 @@
         </section>
 
     </main>
+
+    <!-- Footer -->
     <footer class="container">
         <div class="footer-grid">
             <div id="about">
@@ -211,7 +217,7 @@
             12345678</div>
     </footer>
 
-        <!-- Calendly badge widget begin -->
+    <!-- Calendly badge widget begin -->
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/d/y5s-92w-t24/30min?primary_color=3758e9', text: 'Book uforpligtende møde', color: '#e75f35', textColor: '#F9F7F6', branding: undefined }); }</script>
 <!-- Calendly badge widget end -->
