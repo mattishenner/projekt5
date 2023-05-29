@@ -5,10 +5,9 @@ let options = {
 
 
 
-let callback = (entries) => {
+function callback (entries) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-
             let animationClass = (entry.target.dataset.animationIndex % 2 === 0)
                 ? "slide-in-left"
                 : "slide-in-right";
@@ -19,9 +18,9 @@ let callback = (entries) => {
 };
 
 let observer = new IntersectionObserver(callback, options);
-let target = document.querySelectorAll(".intersection");
+let elements = document.querySelectorAll(".intersection");
 
-target.forEach((t, index) => {
-    t.dataset.animationIndex = index;
-    observer.observe(t);
+elements.forEach((element, index) => {
+    element.dataset.animationIndex = index;
+    observer.observe(element);
 });
