@@ -814,6 +814,22 @@ mark.white {
     }
 }
 
+/* Slide up */
+.slide-up {
+    animation: slide-up 1s forwards;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(clamp(26px, 40%, 60px));
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
 /* ********************** | OM OS | ********************** */
 /* ********************** | OM OS | ********************** */
 .titlebox h2{

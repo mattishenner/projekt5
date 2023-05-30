@@ -6,7 +6,7 @@ const currentPage = window.location.pathname;
 //array til nav items
 let navItems = [
     {title: "Priser", path: "/price.html"},
-    {title: "Om os", path: "/om-os.html"},
+    {title: "Om os", path: "/om-os.html"}
 ];
 
 
@@ -74,8 +74,10 @@ openMenuIcon.appendChild(iconSpan2);
 nav.appendChild(openMenuIcon);
 
 
-openMenuIcon.addEventListener("click", () => {
+openMenuIcon.addEventListener("click", handleMenuClick);
+
+function handleMenuClick() {
     ul.classList.toggle("open-menu");
     iconSpan.classList.toggle("close");
     iconSpan2.classList.toggle("close");
-})
+}
