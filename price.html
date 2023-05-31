@@ -140,46 +140,48 @@
         </div>
 
         <section class="container-wide blue contact">
-            <h2>Lad os starte en dialog!</h2>
-            <p class="faded mb-3">Vælg din foretrukne kontaktmetode nedenfor, så vender vi tilbage til dig. </p>
+            <h2 class="pre-slide-up">Lad os starte en dialog!</h2>
+            <p class="faded mb-3 pre-slide-up">Vælg din foretrukne kontaktmetode nedenfor, så vender vi tilbage til dig. </p>
             <!-- Side 1 -->
-            <div id="formPage1">
+            <div id="formPage1" class="pre-slide-up">
                 <form>
                     <input type="radio" id="option1" name="option" value="option1">
                     <label for="option1">Jeg vil gerne have tilsendt en mail</label>
-
-
+    
+    
                     <input type="radio" id="option2" name="option" value="option2">
                     <label for="option2">Jeg vil gerne ringes op</label>
-
-
+    
+    
                     <button type="button" onclick="switchPage()">Videre</button>
                 </form>
             </div>
-
+    
             <!-- Side 2 -->
             <div id="formPage2" style="display: none;">
-                <form>
-                    <input type="email" name="email" placeholder="E-mail">
-                    <input type="submit" value="Submit">
+                <form action="https://formsubmit.co/henner.mattis@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Navn" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="submit" value="Send">
                 </form>
                 <button type="button" onclick="switchBack()">Tilbage</button>
             </div>
-
+            
             <!-- Side 3 -->
             <div id="formPage3" style="display: none;">
-                <form>
-                    <input type="number" name="phone" placeholder="Telefonnummer">
-                    <input type="submit" value="Submit">
+                <form action="https://formsubmit.co/henner.mattis@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Navn" required>
+                    <input type="number" name="phone" placeholder="Telefonnummer" required>
+                    <input type="submit" value="Send">
                 </form>
                 <button type="button" onclick="switchBack()">Tilbage</button>
             </div>
-
-            <div class="faded">
-                <p class="mb-0 mt-3 faded">Du kan selvfølgelig også altid kontakte os på:</p>
-                <p class="mb-0 faded">+45 22 61 05 09 |
-                    <a href="mailto:hej@kissco.dk" style="font-weight: 400; line-height: 1.5;">hej@kissco.dk</a>
-                </p>
+    
+            <div class="faded pre-slide-up">
+            <p class="mb-0 mt-3 faded">Du kan selvfølgelig også altid kontakte os på:</p>
+                <p class="mb-0 faded">+45 22 61 05 09 | 
+                    <a href="mailto:hej@kissco.dk" class="no-transition" style="font-weight: 400; line-height: 1.5;">hej@kissco.dk</a>
+                </p> 
             </div>
         </section>
 
@@ -205,7 +207,7 @@
                 <p class="mb-0">Edisonsvej 2</p>
                 <p class="mb-0">5000 Odense C</p>
             </div>
-            
+
             <div id="navigation">
                 <h5 class="mb-1">Navigation</h5>
                 <p class="mb-0"><a href="index.html">Hjem</a></p>
