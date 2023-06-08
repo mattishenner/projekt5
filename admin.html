@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KISS & Co. - Rekruttering med ♥</title>
+    <meta name="description"
+        content="Din enkle, effektive rekrutteringspartner på Fyn. Nærhed, forståelse, trivsel - det er vores tilgang til rekruttering HR.">
+    <link rel="icon" type="image/x-icon" href="/img/fav.png">
+
+    <!-- Preload lottie animation -->
+    <link rel="preload" href="js/preloader.json" as="fetch">
+    <!-- Preload lottie player -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.js" as="script">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calendly.css">
+    <link rel="stylesheet" href="css/transition.css">
+
+    <!-- JavaScript -->
+    <script src="js/nav.js" defer></script>
+    <script src="js/price.js" defer></script>
+    <script src="js/hero-cta.js" defer></script>
+    <script src="js/bottom-contact.js" defer></script>
+    <script src="js/transition.js" defer></script>
+    <script src="js/cases.js" defer></script>
+    <script src="https://cdn.tiny.cloud/1/rqtqtz8tk3c078srr6gu9dlz9vblogm7u0xm085s0kd8poba/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <script src="js/admin.js" defer></script>
+
+</head>
+
+
+
+<body>
+    <header>
+        <!-- Transition overlay -->
+        <div class="transition-element is-transitioning"></div>
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="lottie-container"></div>
+            <div id="preloader-content" style="display: none;">
+            </div>
+        </div>
+        <!-- Preload JS (pleaseee don't defer :') ) -->
+        <script src="js/preloader.js"></script>
+
+        <nav></nav>
+    </header>
+    <main>
+        <h1 class="adminheader">Admin</h1>
+        <div class="form-group">
+            <input class="form-control" placeholder="Overskrift" id="heading" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" placeholder="Quote" id="quote" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" placeholder="Author" id="author" type="text">
+        </div>
+        <button id="submit">Opret ny case</button>
+        <textarea id="case">
+         </textarea>
+
+
+    </main>
+
+</body>
+
+</html>

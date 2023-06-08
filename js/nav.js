@@ -5,8 +5,9 @@ const currentPage = window.location.pathname;
 
 //array til nav items
 let navItems = [
-    {title: "Priser", path: "/price.html"},
-    {title: "Om os", path: "/om-os.html"}
+    { title: "Admin", path: "/admin.html" },
+    { title: "Priser", path: "/price.html" },
+    { title: "Om os", path: "/om-os.html" }
 ];
 
 
@@ -31,11 +32,11 @@ navItems.forEach((navItem) => {
 
     a.textContent = navItem.title;
     a.href = navItem.path;
-    
+
     li.appendChild(a);
     ul.appendChild(li);
 
-    if (navItem.path === (`${currentPage}`)){
+    if (navItem.path === (`${currentPage}`)) {
         a.classList.add("active");
     }
 })

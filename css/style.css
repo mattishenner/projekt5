@@ -902,6 +902,14 @@ mark.white {
     color: #F9F7F6;
 }
 
+/* ********************** | Admin | ********************** */
+/* ********************** | Admin | ********************** */
+
+.adminheader{
+    margin-top: 150px;
+    text-align: center;
+}
+
 /* ********************** | LARGE SCREENS | ********************** */
 /* ********************** | LARGE SCREENS | ********************** */
 @media only screen and (min-width: 700px) {

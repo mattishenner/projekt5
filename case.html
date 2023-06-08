@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KISS & Co. - Læs om vores samarbejde</title>
+    <meta name="description"
+        content="Dyk ned i vores vellykkede rekrutterings-case med ABC Virksomhed. Hos KISS & Co. arbejder vi effektivt for at finde det perfekte match, hvilket er dokumenteret i vores samarbejde med ABC Virksomhed.">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calendly.css">
+    <link rel="stylesheet" href="css/transition.css">
+
+    <!-- JavaScript -->
+    <script src="js/nav.js" defer></script>
+    <script src="js/contactform.js" defer></script>
+    <script src="https://kit.fontawesome.com/f9361c2581.js" crossorigin="anonymous"></script>
+    <script src="js/hero-cta.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.js"></script>
+    <script src="js/bottom-contact.js" defer></script>
+    <script src="js/transition.js" defer></script>
+</head>
+
+<body>
+    <!-- Transition overlay -->
+    <div class="transition-element is-transitioning"></div>
+
+    <!-- Kontakt form pop up -->
+    <section>
+        <div class="popup-container">
+            <div class="popup-box">
+                <div class="close-btn">&times;</div>
+                <div class="popup-text">
+                    <h3>Har du spørgsmål, eller vil du bare sige hej?</h3>
+                    <p class="faded">Uanset hvad ser vi frem til at høre fra dig!</p>
+                    <ul>
+                        <li>
+                            <img src="/img/icons/mail.svg" alt="E-mail" class="icon">
+                            <a href="mailto:hej@kissco.dk" class="contact-mail">hej@kissco.dk</a>
+                        </li>
+                        <li>
+                            <img src="/img/icons/phone.svg" alt="Telefonnummer" class="icon">
+                            <span>22 61 05 09</span>
+                        </li>
+                        <li>
+                            <img src="/img/icons/pin.svg" alt="Adresse" class="icon">
+                            <a href="https://www.google.com/maps/place/Edisonsvej+2,+5000+Odense/@55.40532,10.3861615,17z/data=!3m1!4b1!4m6!3m5!1s0x464cdffe2871dd35:0xc9e86be16bf7b023!8m2!3d55.40532!4d10.3887364!16s%2Fg%2F11bw3wzmfl?entry=ttu"
+                                class="contact-mail">
+                                Edisonvej 2, 5000 Odense C
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="popup-form">
+                    <form action="https://formsubmit.co/henner.mattis@gmail.com" method="POST">
+                        <div class="form-group">
+                            <input type="text" placeholder="Fulde Navn" class="form-control" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" class="form-control" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Skriv din besked her..." class="form-control"
+                                name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav></nav>
+
+    <!-- Tittel i toppen -->
+    <section class="container-wide blue quote pris">
+        <div class="content">
+            <h1>Case study: <span id="heading"></span></h1>
+        </div>
+    </section>
+
+    <!-- Tekstafsnit -->
+    <main class="container">
+        <article id="case-container" class="blog">
+        </article>
+    </main>
+
+    <!-- Kontaktformular i bunden -->
+    <section class="container-wide blue contact">
+        <h2 class="pre-slide-up">Lad os starte en dialog!</h2>
+        <p class="faded mb-3 pre-slide-up">Vælg din foretrukne kontaktmetode nedenfor, så vender vi tilbage til dig.
+        </p>
+        <!-- Side 1 -->
+        <div id="formPage1" class="pre-slide-up">
+            <form>
+                <input type="radio" id="option1" name="option" value="option1">
+                <label for="option1">Jeg vil gerne have tilsendt en mail</label>
+
+
+                <input type="radio" id="option2" name="option" value="option2">
+                <label for="option2">Jeg vil gerne ringes op</label>
+
+
+                <button type="button" onclick="switchPage()">Videre</button>
+            </form>
+        </div>
+
+        <!-- Side 2 -->
+        <div id="formPage2" style="display: none;">
+            <form action="https://formsubmit.co/henner.mattis@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Navn" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="submit" value="Send">
+            </form>
+            <button type="button" onclick="switchBack()">Tilbage</button>
+        </div>
+
+        <!-- Side 3 -->
+        <div id="formPage3" style="display: none;">
+            <form action="https://formsubmit.co/henner.mattis@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Navn" required>
+                <input type="number" name="phone" placeholder="Telefonnummer" required>
+                <input type="submit" value="Send">
+            </form>
+            <button type="button" onclick="switchBack()">Tilbage</button>
+        </div>
+
+        <div class="faded pre-slide-up">
+            <p class="mb-0 mt-3 faded">Du kan selvfølgelig også altid kontakte os på:</p>
+            <p class="mb-0 faded">+45 22 61 05 09 |
+                <a href="mailto:hej@kissco.dk" class="no-transition"
+                    style="font-weight: 400; line-height: 1.5;">hej@kissco.dk</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container">
+        <div class="footer-grid">
+            <div id="about">
+                <h4 class="mb-1">KISS & Co.</h4>
+                <p>Hos KISS & Co. brænder vi for HR. Vi beskæftiger os med rekruttering og vores netværk har allerede
+                    skabt forbindelser mellem arbejdspladser og nye medarbejdere på hele Fyn.</p>
+            </div>
+
+            <div id="contact">
+                <h5 class="mb-1">Kontakt</h5>
+                <p class="mb-0">+45 22 61 05 09</p>
+                <p><a href="mailto:hej@kissco.dk" style="font-weight: 400;">hej@kissco.dk</a></p>
+            </div>
+
+            <div id="adresse">
+                <h5 class="mb-1">Adresse</h5>
+                <p class="mb-0">Edisonsvej 2</p>
+                <p class="mb-0">5000 Odense C</p>
+            </div>
+
+            <div id="navigation">
+                <h5 class="mb-1">Navigation</h5>
+                <p class="mb-0"><a href="index.html">Hjem</a></p>
+                <p class="mb-0"><a href="om-os.html">Om os</a></p>
+                <p class="mb-0"><a href="price.html">Priser</a></p>
+            </div>
+        </div>
+        <div id="copyright">KISS & Co. ApS © 2023 | Edisonsvej 2, 5000 Odense C, Danmark | Tlf: +45 22 61 05 09 | CVR:
+            12345678</div>
+    </footer>
+
+    <!-- Calendly badge widget begin -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script
+        type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/d/y5s-92w-t24/30min?primary_color=3758e9', text: 'Book uforpligtende møde', color: '#e75f35', textColor: '#F9F7F6', branding: undefined }); }</script>
+    <!-- Calendly badge widget end -->
+
+    <script>
+        const headingContainer = document.querySelector("#heading")
+        const caseContainer = document.querySelector("#case-container")
+        const currentUrl = new URL(window.location.href)
+        const caseId = currentUrl.search.replace(/^\D+/g, '')
+
+        const cases = JSON.parse(localStorage.getItem("cases"))
+
+        const thisCase = cases.find(item => {
+            return item.id == caseId
+        })
+
+        headingContainer.innerHTML = thisCase.heading
+        caseContainer.innerHTML = thisCase.data
+    </script>
+</body>
+
+</html>
