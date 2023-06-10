@@ -905,9 +905,32 @@ mark.white {
 /* ********************** | Admin | ********************** */
 /* ********************** | Admin | ********************** */
 
+.adminwrapper{
+    padding-right: 64px;
+    padding-left: 64px;
+
+}
+
 .adminheader{
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;
+}
+
+.galleryheader{
+    margin-bottom: 30px;
+}
+
+.casebeskrivelse{
+    margin-bottom: 30px;
+}
+.adminbutton{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+#submit{
+    width: 60%;
 }
 
 /* ********************** | LARGE SCREENS | ********************** */
