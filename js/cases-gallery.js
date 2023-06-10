@@ -1,10 +1,11 @@
 const galleryElement = document.getElementById('gallery');
 const createdCases = JSON.parse(localStorage.getItem("cases")) || []
 let images = document.querySelectorAll('.gallery-img');
+console.log(createdCases)
 
 createdCases.forEach(function (item) {
-  const imageToRemove = images[0]
-
+  const imageToRemove = document.querySelectorAll(".tmp-gallery-image")[0]
+if(!imageToRemove)return
   document.querySelector("#gallery").removeChild(imageToRemove)
 
   const div = document.createElement("div")
@@ -25,8 +26,8 @@ createdCases.forEach(function (item) {
 
   div.innerHTML = newImage;
 
-  document.querySelector("#gallery").appendChild(div)
-
+  // document.querySelector("#gallery").appendChild(div)
+document.querySelector("#gallery").insertBefore(div, document.querySelector("#gallery").children[0])
   images = document.querySelectorAll('.gallery-img');
   images.forEach((image, index) => {
     image.addEventListener('click', () => {
